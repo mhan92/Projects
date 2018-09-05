@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<Netezza>
+		<uid></uid>
+		<pwd></pwd>
+		<hostname></hostname>
+		<port></port>
+		<db></db>
+	</Netezza>
+	<DATABASE>
+
+<!-- StartDate is the initial date the stats will be pulled from for TableMonthlyStats and frequency scripts
+     And should be updated to the last date the script was ran
+     
+     EndDate is the last date for the monthly and frequency scripts will go up to 
+ -->
+
+		<startDate>20150101</startDate>
+		<endDate>20180101</endDate>
+
+<!-- HistDate is used in the TableCheck.py script. Used to determine the table check would be used to look
+     into the past for any specific dates that fall outside the norm. 
+
+     ALWAYS CURRENT DAY - 1 IF NO HISTORICAL ANALYSIS IS PERFORMED
+-->
+		<histDate>20140101</histDate>
+		<db>HUB</db>
+		<TABLE>
+			<tbl>FSV_CONTRACT_BOOKING_HISTORY</tbl>
+		</TABLE>
+	</DATABASE>		
+</config>

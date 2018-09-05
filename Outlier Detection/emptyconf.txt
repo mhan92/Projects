@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+	<Netezza>
+
+		<uid></uid>
+
+		<pwd></pwd>
+
+		<hostname></hostname>
+		<port></port>
+
+		<db></db>
+
+	</Netezza>
+
+	<DATABASE>
+
+<!-- monthly statistics date range -->
+
+		<begin>20180601</begin>
+		<end>20180630</end>
+
+<!-- numeric oultlier date range -->
+
+		<startDate>20180723</startDate>
+		<endDate>20180724</endDate>
+
+		<DB>
+
+			<db>DM_CUSTOMER</db>
+			<tbl_name>SVCOPS_ACTIVITY_ADHERENCE_FACT</tbl_name>
+
+			<COLUMN>
+
+				<col>*</col>
+
+				<col_grp>ACTIVITY_CODE</col_grp>
+			</COLUMN>
+
+		</DB>
+
+</DATABASE>		
+
+</config>
